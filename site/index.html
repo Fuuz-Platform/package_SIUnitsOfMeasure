@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIUnits — Fuuz SI Units of Measure Package &mdash; Fuuz Accelerator</title>
+<meta name="description" content="SI Units of Measure Fuuz Package for Fuuz App Installations">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://accelerators.fuuz.com/package-si-units/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://accelerators.fuuz.com/package-si-units/">
+<meta property="og:site_name" content="Fuuz Accelerators">
+<meta property="og:title" content="SIUnits — Fuuz SI Units of Measure Package &mdash; Fuuz Accelerator">
+<meta property="og:description" content="SI Units of Measure Fuuz Package for Fuuz App Installations">
+<link rel="icon" href="assets/appicon-violet.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="prose.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "SIUnits \u2014 Fuuz SI Units of Measure Package",
+  "url": "https://accelerators.fuuz.com/package-si-units/",
+  "description": "SI Units of Measure Fuuz Package for Fuuz App Installations",
+  "codeRepository": "https://github.com/Fuuz-Platform/package-si-units",
+  "applicationCategory": "BusinessApplication",
+  "runtimePlatform": "Fuuz",
+  "author": {
+    "@type": "Organization",
+    "name": "Fuuz",
+    "url": "https://fuuz.com"
+  }
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="assets/logo-horizontal-on-midnight.svg" alt="Fuuz"></a>
+    <span class="section">Accelerators</span>
+    <nav><a href="#description">Description</a><a href="#package-contents">Package Contents</a><a href="#when-to-use-this-package">When to Use This Package</a><a href="https://github.com/Fuuz-Platform/package-si-units">GitHub</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap hero">
+  <p class="eyebrow">Accelerator &middot; Fuuz package</p>
+  <h1>SIUnits — Fuuz SI Units of Measure <span class="accent">Package</span></h1>
+  <p class="lede">SI Units of Measure Fuuz Package for Fuuz App Installations</p>
+  <div class="ctas">
+    <a class="cta cta-primary" href="https://github.com/Fuuz-Platform/package-si-units">Get the package</a>
+    <a class="cta cta-secondary" href="../">All accelerators</a>
+  </div>
+</div>
+<section>
+  <div class="wrap prose">
+<p>A Fuuz package containing SI (International System of Units) units of measure, unit types, and unit conversions for the Fuuz platform.</p>
+<h2 id="description">Description</h2>
+<p><code>SIUnits@1.0.0.fuuz</code> is a Fuuz platform package that provides a complete set of <strong>SI-only</strong> units of measure for use in any Fuuz application. It seeds three core data models — <strong>UnitType</strong>, <strong>Unit</strong>, and <strong>UnitConversion</strong> — giving your application a metric-based measurement system out of the box. This package excludes Imperial units, making it ideal for environments that operate exclusively with the metric system.</p>
+<h2 id="package-contents">Package Contents</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Data Model</th>
+<th>Record Count</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UnitType</strong></td>
+<td>17</td>
+<td>SI unit categories plus Amount, Currency, Frequency, and Time</td>
+</tr>
+<tr>
+<td><strong>Unit</strong></td>
+<td>110</td>
+<td>Individual SI units of measure across all unit types</td>
+</tr>
+<tr>
+<td><strong>UnitConversion</strong></td>
+<td>686</td>
+<td>Conversion factors between SI units within the same type</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Unit Types Included</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Unit Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Area</td>
+<td>Area (SI)</td>
+</tr>
+<tr>
+<td>Density</td>
+<td>Density (SI)</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>Energy (SI)</td>
+</tr>
+<tr>
+<td>Flow Rate</td>
+<td>Flow Rate (SI)</td>
+</tr>
+<tr>
+<td>Force</td>
+<td>Force (SI)</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Length (SI)</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>Power (SI)</td>
+</tr>
+<tr>
+<td>Pressure</td>
+<td>Pressure (SI)</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Speed (SI)</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Temperature (SI)</td>
+</tr>
+<tr>
+<td>Torque</td>
+<td>Torque (SI)</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>Volume (SI)</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>Weight (SI)</td>
+</tr>
+<tr>
+<td><strong>Standalone</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Amount</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>Currency</td>
+</tr>
+<tr>
+<td>Frequency</td>
+<td>Frequency</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Time</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="when-to-use-this-package">When to Use This Package</h2>
+<p>Use this package when:</p>
+<ul>
+<li>You are setting up a <strong>new Fuuz application</strong> that requires a standardized set of <strong>SI / metric units only</strong>.</li>
+<li>You operate in a region or industry that exclusively uses the <strong>metric system</strong> and do not need Imperial units.</li>
+<li>You want a <strong>lighter-weight alternative</strong> to the full AllUnits package (110 units vs. 164, 686 conversions vs. 1,720).</li>
+<li>You want to <strong>replace the platform's default seed data</strong> with a comprehensive SI unit system.</li>
+</ul>
+<h2 id="how-to-import">How to Import</h2>
+<ol>
+<li>Download the <code>SIUnits@1.0.0.fuuz</code> file from this repository.</li>
+<li>Open your Fuuz application in the platform.</li>
+<li><strong>Drag and drop</strong> the <code>.fuuz</code> file into the platform UI to import the package.</li>
+</ol>
+<h2 id="before-you-import-deleting-existing-seed-data">Before You Import — Deleting Existing Seed Data</h2>
+<p>The Fuuz platform seeds default UnitConversion, Unit, and UnitType records into new applications. These <strong>will conflict</strong> with the package import. You must delete the existing seed data first by running the GraphQL mutations provided in <a href="deleteSeededUnitData.graphql"><code>deleteSeededUnitData.graphql</code></a>.</p>
+<p><strong>Mutations must be run in this order</strong> (foreign key dependencies):</p>
+<ol>
+<li><strong><code>deleteUnitConversion</code></strong> — Remove seeded unit conversions first (they reference Units).</li>
+<li><strong><code>deleteUnit</code></strong> — Remove seeded units next (they reference UnitTypes).</li>
+<li><strong><code>deleteUnitType</code></strong> — Remove seeded unit types last.</li>
+</ol>
+<p>The <code>deleteSeededUnitData.graphql</code> file contains all three mutations pre-built with the default seeded record IDs.</p>
+<blockquote>
+<p><strong>Note:</strong> You may need to update the IDs in the mutations or add additional entries depending on your environment. If your application has had units modified, added, or removed since initial setup, the seeded record IDs may differ from the defaults provided.</p>
+</blockquote>
+<h2 id="package-metadata">Package Metadata</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Package Name</td>
+<td><code>SIUnits</code></td>
+</tr>
+<tr>
+<td>Version</td>
+<td><code>1.0.0</code></td>
+</tr>
+<tr>
+<td>Spec Version</td>
+<td><code>2.0.0</code></td>
+</tr>
+<tr>
+<td>Platform Version</td>
+<td><code>2026.2.1.782</code></td>
+</tr>
+<tr>
+<td>Publisher</td>
+<td><code>fuuz</code></td>
+</tr>
+</tbody>
+</table></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Fuuz&reg; is an Enterprise Industrial Intelligence Platform.
+      <a href="https://accelerators.fuuz.com/">All accelerators</a> &middot;
+      <a href="https://github.com/Fuuz-Platform/package-si-units">Source</a> &middot;
+      <a href="https://fuuz.com">fuuz.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
